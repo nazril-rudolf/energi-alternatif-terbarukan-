@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.bash_history
+.bashrc
+.npm/
+.cache/
+Acode-live-server-backend/
+.npmrc
