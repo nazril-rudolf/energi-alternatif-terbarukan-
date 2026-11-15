@@ -1,28 +1,48 @@
 # Solar Energy Laboratory 3D
 
-Laboratorium virtual PLTS: React + Vite + React Three Fiber + drei + GSAP + Lucide.
+Laboratorium virtual Pembangkit Listrik Tenaga Surya (PLTS).
 
-## Menjalankan
+Repositori: energi-alternatif-terbarukan-
+
+## Teknologi
+- React
+- Vite
+- React Three Fiber
+- Drei
+- GSAP
+- Lucide
+
+## Menjalankan Proyek
+
+Pastikan Node.js 18 atau lebih baru sudah tersedia.
+
 ```bash
 npm install
-npm run dev      # buka alamat yang tampil (mis. http://localhost:5173)
-npm run build    # build produksi
+npm run dev
+npm run build
 ```
-Perlu Node.js 18 atau lebih baru dan koneksi internet saat `npm install`.
 
-## Struktur
-- `src/state` store UI (`store.js`) dan data simulasi per frame (`live.js`).
-- `src/simulations` model energi (`energyModel.js`), loop simulasi, pemeriksa misi.
-- `src/animations` kamera, exploded view, simulasi terpandu (GSAP).
-- `src/controls/actions.js` semua aksi tombol.
-- `src/scenes` objek 3D (satu file per objek), kabel, aliran partikel, cuaca, lingkungan.
-- `src/components` antarmuka: sidebar, toolbar, dashboard, panel info, kuis, misi, tur, materi, pengaturan.
-- `src/data` isi materi, kuis, misi, tur, informasi komponen.
+## Struktur Proyek
 
-## Menambah fitur
-Objek baru: buat file di `src/scenes`, bungkus bagian dengan `<Part comp="kunci">`, tambahkan teks di `data/components.js` dan fokus kamera di `animations/camera.js`.
+- `animations/` — kamera, exploded view, simulasi terpandu.
+- `components/` — antarmuka, dashboard, kuis, materi, dan panel.
+- `controls/` — aksi tombol dan kontrol aplikasi.
+- `data/` — materi, kuis, misi, tur, dan informasi komponen.
+- `scenes/` — objek 3D, lingkungan, kabel, dan aliran energi.
+- `simulations/` — model dan proses simulasi energi.
+- `state/` — penyimpanan status aplikasi.
+- `styles/` — stylesheet aplikasi.
+- `utils/` — fungsi pendukung.
 
-## Status
-Dikerjakan: antarmuka, lingkungan 3D, model PLTS, aliran energi, dashboard baterai, Exploded View, X-Ray, cuaca, konsumsi daya 5 alat, tur (dengan suara), misi, kuis, materi, kualitas grafis, fullscreen, progres localStorage.
-Belum dikerjakan: Smart City Solar (Bagian 17), tutorial interaktif bertahap, animasi komponen bergerak saat dipilih selain cincin sorot, model GLB.
-**Belum diuji dijalankan**: kode ditulis tanpa akses internet untuk `npm install`, jadi belum pernah di-build atau dibuka di browser. Harap lakukan pengujian dan laporkan error yang muncul.
+## Fitur
+
+- Lingkungan laboratorium 3D.
+- Simulasi panel surya dan baterai.
+- Aliran energi.
+- Dashboard pemantauan.
+- Exploded View dan X-Ray.
+- Simulasi cuaca.
+- Kontrol konsumsi daya.
+- Tur, misi, kuis, dan materi pembelajaran.
+- Pengaturan kualitas grafis.
+- Fullscreen dan penyimpanan progres.
